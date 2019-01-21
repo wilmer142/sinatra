@@ -1,7 +1,9 @@
 require "sinatra"
 
-get '/makers/:nombre'do
-	<<-HTML
-		<h1>"Hola #{params[:nombre] && params[:nombre] != "" ? params[:nombre].capitalize : "desconocido"}!"</h1>
-	HTML
+post '/makers'do
+	<h1>"¡Hola #{params[:nombre]}!"</h1>
+end
+
+get '/' do
+	erb :index
 end
