@@ -2,6 +2,6 @@ require "sinatra"
 
 get '/'do
 	<<-HTML
-		<h1>"hola #{params[:nombre]}"</h1>
+		<h1>"Hola #{params[:nombre]}!"</h1>
 	HTML
 end
