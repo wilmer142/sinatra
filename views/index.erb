@@ -1,6 +1,5 @@
-<h1>Hola</h1>
-
-<% 50.times do |i| %>
-	<strong><%= i % 2 == 0 ? "#{i} Soy Par!" : "#{i} Soy Impar!" %></strong>
-	<br>
-<% end %>
+<h1>Mi cuenta es: <%= @number %></h1>
+<form action="/" method="get">
+	<input id="number" type="hidden" name="number" value= "<%= @number %>" >
+	<input type="submit" value="Sumar"></input>
+</form>
