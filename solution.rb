@@ -1,8 +1,6 @@
 require "sinatra"
-require 'pry'
 
 get '/' do
-	binding.pry
 	if request.env["HTTP_PERMISO"] == "soy-un-token-secreto"
 		"Si lo logramos!"
 	else
