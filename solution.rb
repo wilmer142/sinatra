@@ -1,9 +1,5 @@
 require "sinatra"
 
-post '/makers'do
-	"¡Hola #{params[:nombre]}!"
-end
-
 get '/' do
-	erb :index
+	"HcUy6Re2LLBRtj"
 end
