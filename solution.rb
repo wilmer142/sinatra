@@ -1,7 +1,14 @@
 require "sinatra"
+require 'pry'
 
 get '/' do
-	request.env["HTTP_USER_AGENT"]
+	binding.pry
+	if request.env["HTTP_PERMISO"] == "soy-un-token-secreto"
+		"Si lo logramos!"
+	else
+		"Sin permiso"
+	end
+
 end
 
 get '/respuesta' do
