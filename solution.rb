@@ -1,7 +1,7 @@
 require "sinatra"
 
 get '/' do
-	erb :index
+	request.env["HTTP_USER_AGENT"]
 end
 
 get '/respuesta' do
