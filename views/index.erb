@@ -1,5 +1,6 @@
-<h1>Hola dime a quien saludar</h1>
-<form action="/makers" method="post">
-	<input type="text" name="nombre"></input>
-	<input type="submit" value="¡Hola!"></input>
-</form>
+<h1>Hola</h1>
+
+<% 50.times do |i| %>
+	<strong><%= i % 2 == 0 ? "#{i} Soy Par!" : "#{i} Soy Impar!" %></strong>
+	<br>
+<% end %>
